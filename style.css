@@ -1,0 +1,33 @@
+
+.filters {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filters button {
+  background: #e0f0ff;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filters button:hover,
+.filters button.active {
+  background: #0077b6;
+  color: white;
+}
+
+.team-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.team-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
